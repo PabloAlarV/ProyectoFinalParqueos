@@ -1,0 +1,424 @@
+/* ESTILOS GENERALES */
+
+body {
+    margin: 0;
+    background-color: #f3f5f2;
+    color: #29332f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+/* ENCABEZADO */
+
+header {
+    background-color: #263a33;
+    color: white;
+    padding: 18px 0;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.marca h1 {
+    margin: 0;
+    font-size: 23px;
+}
+
+.marca p {
+    margin: 3px 0 0;
+    color: #d4ded7;
+}
+
+.logo {
+    background-color: #496b58;
+    border: 1px solid #789081;
+    border-radius: 6px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* MENU DE NAVEGACION */
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    background-color: #1d2d27;
+    padding: 12px;
+}
+
+nav button {
+    background-color: transparent;
+    color: white;
+    margin: 3px;
+}
+
+nav button:hover {
+    background-color: #496b58;
+}
+
+main {
+    padding-top: 28px;
+    padding-bottom: 35px;
+}
+
+/* PORTADA Y SECCIONES */
+
+.portada {
+    background-color: #263a33;
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.portada h2 {
+    color: white;
+    font-size: 32px;
+    margin: 8px 0 14px;
+}
+
+.portada p {
+    max-width: 650px;
+}
+
+.panel {
+    background-color: white;
+    border: 1px solid #dce3dd;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 22px;
+}
+
+h2 {
+    color: #263a33;
+    margin-top: 5px;
+    margin-bottom: 16px;
+    font-size: 25px;
+}
+
+h3 {
+    color: #263a33;
+    margin-top: 0;
+    font-size: 19px;
+}
+
+p {
+    margin-top: 8px;
+}
+
+.etiqueta {
+    color: #496b58;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.portada .etiqueta {
+    color: #b7cabb;
+}
+
+/* ORGANIZACION DE CONTENIDO */
+
+.columnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.servicios article {
+    background-color: #f3f5f2;
+    padding: 18px;
+    border-radius: 6px;
+    border-left: 4px solid #91a99a;
+}
+
+.servicios p {
+    margin-bottom: 0;
+}
+
+.precio-grande {
+    color: #496b58;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.precio-grande span {
+    color: #68756d;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.centro {
+    text-align: center;
+}
+
+.acceso {
+    max-width: 620px;
+    margin: 30px auto;
+}
+
+.selector {
+    display: flex;
+    gap: 12px;
+    margin: 18px 0;
+}
+
+/* BOTONES */
+
+button {
+    background-color: #496b58;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 11px 17px;
+    margin: 7px 8px 7px 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #263a33;
+}
+
+button.secundario,
+.boton-claro,
+button.salir {
+    background-color: #e7eee8;
+    color: #263a33;
+}
+
+button.secundario:hover,
+.boton-claro:hover,
+button.salir:hover {
+    background-color: #d5e1d7;
+}
+
+.encabezado button {
+    margin: 0;
+}
+
+.menu-interno button {
+    margin: 3px;
+}
+
+form button {
+    margin-top: 16px;
+    margin-right: 10px;
+}
+
+/* FORMULARIOS */
+
+form {
+    max-width: 760px;
+}
+
+label {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd6cd;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 16px;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #b2c6b7;
+    border-color: #496b58;
+}
+
+.datos {
+    background-color: #f3f5f2;
+    border-radius: 6px;
+    padding: 15px 20px;
+    margin: 18px 0;
+}
+
+.datos p {
+    margin: 9px 0;
+}
+
+.mensaje {
+    background-color: #f7e9e7;
+    color: #8b3028;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.nota {
+    color: #657168;
+    font-size: 14px;
+}
+
+/* RESUMEN DEL ADMINISTRADOR */
+
+.titulo-seccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.titulo-seccion h2 {
+    margin-bottom: 0;
+}
+
+.indicadores {
+    margin-bottom: 22px;
+}
+
+.indicador {
+    background-color: white;
+    border: 1px solid #dce3dd;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.indicador span {
+    display: block;
+    color: #647168;
+    font-size: 14px;
+}
+
+.indicador strong {
+    display: block;
+    color: #263a33;
+    font-size: 27px;
+    margin-top: 7px;
+}
+
+.indicador.ancho {
+    margin-top: 18px;
+    max-width: 280px;
+}
+
+/* TABLAS */
+
+.tabla-contenedor {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+}
+
+th {
+    background-color: #263a33;
+    color: white;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #dce3dd;
+    font-size: 14px;
+}
+
+tr:nth-child(even) {
+    background-color: #f7f9f7;
+}
+
+td button {
+    padding: 8px 11px;
+    margin: 4px;
+    font-size: 13px;
+}
+
+.panel-pago {
+    margin-top: 22px;
+    background-color: #f5f8f5;
+}
+
+/* FACTURA Y PIE DE PAGINA */
+
+.factura {
+    max-width: 600px;
+    border: 1px solid #dce3dd;
+    padding: 25px;
+    margin: 18px 0;
+    background-color: white;
+}
+
+.factura h3 {
+    border-bottom: 2px solid #496b58;
+    padding-bottom: 10px;
+}
+
+.factura p {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #263a33;
+    color: #d4ded7;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+}
+
+/* FORMATO PARA IMPRIMIR LA FACTURA */
+
+@media print {
+    header,
+    nav,
+    footer,
+    button {
+        display: none !important;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    .contenedor,
+    main {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .panel {
+        border: none;
+    }
+}
